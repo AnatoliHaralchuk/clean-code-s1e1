@@ -43,13 +43,12 @@
   display: flex;
 }
 
-#incomplete-tasks,
-#completed-tasks {
+.tasks {
   margin: 0;
   padding: 0px;
 }
 
-.edit-mode,
+.tasks__item,
 .title3 {
   list-style: none;
 }
@@ -156,22 +155,22 @@ button.delete img:hover {
 
 /* Completed */
 
-ul#completed-tasks label {
+.tasks#completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-ul li input[type=text] {
+.tasks li input[type=text] {
   display: none;
 }
 
-ul li.edit-mode input[type=text] {
+.tasks li.tasks__item input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.edit-mode label {
+.tasks li.tasks__item label {
   display: none;
 }
