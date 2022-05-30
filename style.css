@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -42,12 +42,14 @@ body {
   display: flex;
 }
 
-ul {
+#incomplete-tasks,
+#completed-tasks {
   margin:0;
   padding: 0px;
 }
 
-li, h3 {
+.edit-mode,
+.title3 {
   list-style:none;
 }
 
@@ -70,7 +72,7 @@ button:hover {
 }
 
 /* Heading */
-h3,
+.title3,
 label[for="new-task"] {
   color: #333;
   font-weight: 700;
